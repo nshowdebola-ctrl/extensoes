@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Extensões simples para o navegador — sem conta, sem coleta de dados</title>
-  <meta name="description" content="Nove extensões para Firefox e Edge: abas, atalhos de texto, CSS, foco no YouTube, dados de teste, fuso horário, spoilers, leitura acessível e destaques. Tudo roda no seu computador.">
+  <meta name="description" content="Nove extensões para Firefox: abas, atalhos de texto, CSS, foco no YouTube, dados de teste, fuso horário, spoilers, leitura acessível e destaques. Tudo roda no seu computador.">
   <meta property="og:title" content="Extensões simples para o navegador">
   <meta property="og:description" content="Nove extensões simples: abas, atalhos, CSS, spoilers, leitura acessível e mais. Sem conta e sem coleta de dados.">
   <meta property="og:image" content="img/salva-grupos.jpg">
@@ -15,7 +15,7 @@
   <header class="hero">
     <div class="wrap">
       <h1>Extensões simples que resolvem uma coisa bem</h1>
-      <p>Para Firefox e Edge. Rodam no seu computador, sem conta, sem servidor e sem coletar nenhum dado.</p>
+      <p>Para Firefox. Rodam no seu computador, sem conta, sem servidor e sem coletar nenhum dado.</p>
       <ul class="badges">
         <li>Sem conta</li><li>Sem coleta de dados</li><li>Código simples e leve</li>
       </ul>
@@ -176,7 +176,7 @@
       <details><summary>Quanto custa?</summary><p>As extensões são gratuitas.</p></details>
       <details><summary>Vocês veem o que eu digito ou as abas que abro?</summary><p>Não. Nada é enviado para fora do seu navegador. Leia a <a href="https://nshowdebola-ctrl.github.io/politica-extensoes/">política de privacidade</a>.</p></details>
       <details><summary>Qual versão do Firefox eu preciso?</summary><p>Firefox 140 ou mais novo.</p></details>
-      <details><summary>Funciona no Chrome?</summary><p>Por enquanto estão disponíveis para Firefox e Edge.</p></details>
+      <details><summary>Funciona no Chrome ou no Edge?</summary><p>Por enquanto estão disponíveis só para Firefox.</p></details>
       <details><summary>Achei um problema ou tenho uma ideia.</summary><p>Abra um pedido na <a href="https://github.com/nshowdebola-ctrl/politica-extensoes/issues">página de contato</a>.</p></details>
     </div>
   </main>
@@ -191,7 +191,8 @@
   <script src="links.js"></script>
   <script>
     // Monta os botões das lojas a partir de links.js; sem link, mostra "Em breve".
-    const STORES = [["firefox", "Instalar no Firefox"], ["edge", "Instalar no Edge"]];
+    // Para voltar a oferecer o Edge: acrescente ["edge", "Instalar no Edge"] aqui e o link "edge" de cada extensão em links.js.
+    const STORES = [["firefox", "Instalar no Firefox"]];
     document.querySelectorAll("[data-ext]").forEach((card) => {
       const links = (window.STORE_LINKS || {})[card.dataset.ext] || {};
       const box = card.querySelector(".buttons");

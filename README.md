@@ -1,6 +1,6 @@
 # Página de apresentação
 
-Site estático (HTML + CSS, sem build) que apresenta as 4 extensões, com botões para Firefox e Edge.
+Site estático (HTML + CSS, sem build) que apresenta as 9 extensões, com o botão de instalação do Firefox (o Edge pode voltar depois: veja o comentário em `index.html`).
 
 ## Preencher os links das lojas
 
