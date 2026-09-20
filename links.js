@@ -4,4 +4,9 @@ window.STORE_LINKS = {
   "expansor":     { firefox: "", edge: "" },
   "copiador":     { firefox: "", edge: "" },
   "ocultador":    { firefox: "", edge: "" },
+  "gerador-br":   { firefox: "", edge: "" },
+  "fuso":         { firefox: "", edge: "" },
+  "spoilers":     { firefox: "", edge: "" },
+  "leitura":      { firefox: "", edge: "" },
+  "destacador":   { firefox: "", edge: "" },
 };

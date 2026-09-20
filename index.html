@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Extensões simples para o navegador — sem conta, sem coleta de dados</title>
-  <meta name="description" content="Quatro extensões para Firefox e Edge: salvar grupos de abas, expandir atalhos de texto, copiar o CSS de qualquer site e esconder distrações do YouTube. Tudo roda no seu computador.">
+  <meta name="description" content="Nove extensões para Firefox e Edge: abas, atalhos de texto, CSS, foco no YouTube, dados de teste, fuso horário, spoilers, leitura acessível e destaques. Tudo roda no seu computador.">
   <meta property="og:title" content="Extensões simples para o navegador">
-  <meta property="og:description" content="Salvar abas, atalhos de texto, copiar CSS e foco no YouTube. Sem conta e sem coleta de dados.">
+  <meta property="og:description" content="Nove extensões simples: abas, atalhos, CSS, spoilers, leitura acessível e mais. Sem conta e sem coleta de dados.">
   <meta property="og:image" content="img/salva-grupos.jpg">
   <link rel="icon" href="img/salva-grupos-icon.png">
   <link rel="stylesheet" href="style.css">
@@ -86,6 +86,83 @@
       </div>
     </section>
 
+    <section class="ext" id="gerador-br" data-ext="gerador-br" style="--accent:#ea580c">
+      <div class="shot"><img src="img/gerador-br.jpg" alt="Popup do Gerador de Dados de Teste BR com CPF, CNPJ, CEP e outros dados fictícios" width="960" height="600" loading="lazy"></div>
+      <div>
+        <div class="title"><img src="img/gerador-br-icon.png" alt="" width="44" height="44"><h3>Gerador de Dados de Teste BR</h3></div>
+        <p>Gere dados fictícios brasileiros com um clique e preencha o formulário da página.</p>
+        <ul>
+          <li>CPF e CNPJ com dígito verificador válido</li>
+          <li>CEP, celular, telefone, nome, e-mail e data de nascimento</li>
+          <li>Preenche o formulário achando os campos pelo nome ou rótulo (senha e usuário ficam de fora)</li>
+          <li>Com ou sem máscara</li>
+        </ul>
+        <div class="buttons"></div>
+        <p class="note">CPF e CNPJ gerados podem coincidir com os de pessoas reais por acaso: use só em testes.</p>
+      </div>
+    </section>
+
+    <section class="ext" id="fuso" data-ext="fuso" style="--accent:#0284c7">
+      <div class="shot"><img src="img/fuso.jpg" alt="Balão mostrando 17:00 hoje ao selecionar 3pm EST numa página" width="960" height="600" loading="lazy"></div>
+      <div>
+        <div class="title"><img src="img/fuso-icon.png" alt="" width="44" height="44"><h3>Conversor de Fuso Horário</h3></div>
+        <p>Selecione um horário como <code>3pm EST</code> e veja o seu horário na hora.</p>
+        <ul>
+          <li>Entende 3pm, 15:30, 17h30 e UTC+2</li>
+          <li>Mostra se é hoje, amanhã ou ontem</li>
+          <li>Respeita o horário de verão dos EUA (ET, CT, MT, PT)</li>
+          <li>Lê só o texto que você seleciona, sem guardar nada</li>
+        </ul>
+        <div class="buttons"></div>
+      </div>
+    </section>
+
+    <section class="ext" id="spoilers" data-ext="spoilers" style="--accent:#e11d48">
+      <div class="shot"><img src="img/spoilers.jpg" alt="Portal de notícias com manchetes borradas pelo Ocultador de Spoilers" width="960" height="600" loading="lazy"></div>
+      <div>
+        <div class="title"><img src="img/spoilers-icon.png" alt="" width="44" height="44"><h3>Ocultador de Spoilers</h3></div>
+        <p>Cadastre palavras (time, série, personagem) e os textos que as contêm ficam borrados.</p>
+        <ul>
+          <li>Clique no trecho borrado para mostrá-lo</li>
+          <li>Sem diferenciar maiúsculas nem acentos</li>
+          <li>Funciona também em conteúdo que aparece depois</li>
+          <li>Só a sua lista de palavras fica guardada</li>
+        </ul>
+        <div class="buttons"></div>
+      </div>
+    </section>
+
+    <section class="ext" id="leitura" data-ext="leitura" style="--accent:#d97706">
+      <div class="shot"><img src="img/leitura.jpg" alt="Modo leitura em tema sépia com fonte espaçada mostrando um artigo de blog" width="960" height="600" loading="lazy"></div>
+      <div>
+        <div class="title"><img src="img/leitura-icon.png" alt="" width="44" height="44"><h3>Leitura Acessível</h3></div>
+        <p>Um modo leitura limpo, com letra grande e ajustes pensados para dislexia e TDAH.</p>
+        <ul>
+          <li>Tamanho da letra, espaço entre linhas e largura ajustáveis</li>
+          <li>Temas claro, sépia e escuro</li>
+          <li>Fonte espaçada e régua de leitura</li>
+          <li>Tira menus, anúncios e comentários; Esc fecha</li>
+        </ul>
+        <div class="buttons"></div>
+        <p class="note">Funciona melhor em matérias, blogs e documentação.</p>
+      </div>
+    </section>
+
+    <section class="ext" id="destacador" data-ext="destacador" style="--accent:#4f46e5">
+      <div class="shot"><img src="img/destacador.jpg" alt="Artigo com trechos grifados em amarelo, verde e azul e a barra de cores" width="960" height="600" loading="lazy"></div>
+      <div>
+        <div class="title"><img src="img/destacador-icon.png" alt="" width="44" height="44"><h3>Destacador de Texto</h3></div>
+        <p>Grife trechos de qualquer página e volte a vê-los quando reabrir.</p>
+        <ul>
+          <li>Quatro cores na barrinha que aparece ao selecionar</li>
+          <li>Os destaques reaparecem ao voltar à página</li>
+          <li>Exporta em Markdown (esta página ou todas)</li>
+          <li>Botão para apagar tudo; os dados ficam só no navegador</li>
+        </ul>
+        <div class="buttons"></div>
+      </div>
+    </section>
+
     <h2>Por que confiar</h2>
     <p class="lead">Extensões pedem acesso a coisas sensíveis. Estas foram feitas para pedir o mínimo.</p>
     <div class="trust">
@@ -98,6 +175,7 @@
       <h2>Perguntas frequentes</h2>
       <details><summary>Quanto custa?</summary><p>As extensões são gratuitas.</p></details>
       <details><summary>Vocês veem o que eu digito ou as abas que abro?</summary><p>Não. Nada é enviado para fora do seu navegador. Leia a <a href="https://nshowdebola-ctrl.github.io/politica-extensoes/">política de privacidade</a>.</p></details>
+      <details><summary>Qual versão do Firefox eu preciso?</summary><p>Firefox 140 ou mais novo.</p></details>
       <details><summary>Funciona no Chrome?</summary><p>Por enquanto estão disponíveis para Firefox e Edge.</p></details>
       <details><summary>Achei um problema ou tenho uma ideia.</summary><p>Abra um pedido na <a href="https://github.com/nshowdebola-ctrl/politica-extensoes/issues">página de contato</a>.</p></details>
     </div>
