@@ -179,6 +179,16 @@
       <details><summary>Funciona no Chrome ou no Edge?</summary><p>Por enquanto estão disponíveis só para Firefox.</p></details>
       <details><summary>Achei um problema ou tenho uma ideia.</summary><p>Abra um pedido na <a href="https://github.com/nshowdebola-ctrl/politica-extensoes/issues">página de contato</a>.</p></details>
     </div>
+    <section id="apoio" class="apoio" hidden style="--accent:#0f766e">
+      <h2>Apoie o projeto</h2>
+      <p class="lead">As extensões são gratuitas e não têm anúncios. Se elas ajudam você, pode apoiar o trabalho, se quiser. É totalmente voluntário.</p>
+      <div class="buttons">
+        <a id="apoioLink" class="btn" hidden target="_blank" rel="noopener noreferrer">Apoiar</a>
+        <button id="apoioPix" class="btn" type="button" hidden>Copiar chave Pix</button>
+      </div>
+      <p class="note" id="apoioChave" hidden></p>
+    </section>
+
   </main>
 
   <footer>
@@ -204,6 +214,24 @@
         box.append(a);
       }
     });
+
+    // "Apoie o projeto": só aparece se houver link ou chave em links.js (window.APOIO).
+    (() => {
+      const ap = window.APOIO || {};
+      const url = /^https:\/\//.test(ap.url || "") ? ap.url : "";
+      const pix = (ap.pix || "").trim();
+      if (!url && !pix) return;
+      document.getElementById("apoio").hidden = false;
+      if (url) { const a = document.getElementById("apoioLink"); a.href = url; a.hidden = false; }
+      if (pix) {
+        const btn = document.getElementById("apoioPix"), chave = document.getElementById("apoioChave");
+        chave.textContent = "Chave Pix: " + pix; chave.hidden = false; btn.hidden = false;
+        btn.addEventListener("click", async () => {
+          try { await navigator.clipboard.writeText(pix); btn.textContent = "Chave copiada!"; }
+          catch { const r = document.createRange(); r.selectNodeContents(chave); getSelection().removeAllRanges(); getSelection().addRange(r); btn.textContent = "Selecione e copie a chave"; }
+        });
+      }
+    })();
   </script>
 </body>
 </html>

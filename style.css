@@ -53,3 +53,8 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 15px; border-top:
   .trust { grid-template-columns: 1fr; }
   .hero { padding: 48px 0 40px; }
 }
+
+.apoio { margin: 40px 0 56px; padding: 28px; background: var(--card); border: 1px solid var(--line); border-radius: 20px; }
+.apoio[hidden], .apoio [hidden] { display: none; }
+button.btn { font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; }
+button.btn { background: transparent; color: var(--accent); }
